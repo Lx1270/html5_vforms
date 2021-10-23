@@ -1,0 +1,174 @@
+/**
+ * 
+ * vforms.js
+ * Alex Cluff, 2021
+ * 
+ * https://github.com/Lx1270/html5_vforms
+ * 
+ * vForms is a versatile and open-source form creation and processing tool.
+ * Use it to easily create forms, collect the data and process
+ * with it.
+ */
+ 
+.darkinator {
+    display:block;
+    position:fixed;
+    left:0px; top:0px;
+    height:100%; width:100%;
+
+    background-color: rgba(0,0,0,0.1);
+    backdrop-filter: blur(4px);
+    
+
+    transition-property:backdrop-filter, background-color;
+    transition-duration: 800ms, 800ms, 800ms;
+    transition-timing-function: ease, ease, ease;
+}
+
+.darkinator2 {
+    display:block;
+    position:fixed;
+    left:0px;
+    top:0px;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.1);
+    backdrop-filter: blur(3px);
+    opacity: 1;
+    transition-property:backdrop-filter, background-color;
+    transition-duration: 800ms, 800ms, 800ms;
+    transition-timing-function: ease, ease, ease;
+}
+
+.popupform {
+    display:block;
+    margin:0px auto;
+    position:fixed;
+    width:800px;
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left:50%;
+    top: 50%;
+    margin-left:-400px;
+    margin-top:-300px;
+    border-radius:4px;
+    box-sizing:border-box;
+    background-color: white;
+    border:2px solid white;
+    box-shadow:0px 0px 3px rgba(0, 0, 0, 0.6);
+}
+
+.popupform.alert {
+
+}
+
+.popupform .title_hold {
+    display:block;
+    background-color:#f2f2f2;
+}
+
+.popupform .title {
+    display:block;
+    font-size:24pt;
+    padding:16px 8px;
+
+    color:#333;
+}
+
+.popupform .form_description {
+    display:block;
+
+    font-size:12pt;
+    padding:16px 8px;
+
+    color:#333;
+}
+
+.popupform.alert .title_hold {
+
+}
+
+.popupform.alert .title_hold .title,
+.popupform.alert .title_hold .form_description {
+ 
+}
+
+.popupform .submessage {
+    display:block;
+    line-height:unset;
+    padding:12px 0px;
+}
+
+.popupform .submessage.hidden {
+    display:none;
+}
+
+.popupform .submessage .inner {
+    display:block;
+    background-color:yellow;
+    color:#666600;
+
+    line-height:1.5;
+    box-shadow:0px 0px 4px rgba(0, 0, 0, 0.2);
+    padding:8px 4px;
+    border-radius:4px;
+}
+
+.popupform .form_input_item {
+
+    display:block;
+
+    padding:8px 0px;
+    border-bottom:1px solid #f2f2f2;
+
+}
+
+.popupform .form_input_item.hidden {
+    display:none;
+}
+
+.popupform .form_input_item .label {
+    display:block;
+    font-weight: bold;
+    padding: 8px 8px;
+    color:#333;
+}
+
+.popupform .form_input_item .description {
+    display:block;
+    padding: 0px 8px 8px 8px;
+    color: #333;
+    font-size: small;
+}
+
+.popupform .form_input_item .input_hold {
+    display:block;
+}
+
+.popupform .form_input_item .input_hold.text {
+    padding:0px 8px;
+    box-sizing: border-box;
+}
+
+.popupform .form_input_item .input_hold input,
+.popupform .form_input_item .input_hold select {
+    width:100%;
+    box-sizing: border-box;
+    border-radius:3px;
+    padding: 12px 4px;
+    border: 1px solid #ccc;
+}
+
+.popupform .input_hold {
+    display:block;
+    padding:8px 4px;
+}
+
+
+.popupform .input_hold button {
+    padding:4px;
+    margin:0px 4px;
+    min-width:64px;
+
+}
